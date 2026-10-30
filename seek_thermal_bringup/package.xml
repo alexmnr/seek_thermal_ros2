@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>seek_thermal_ros2</name>
+  <name>seek_thermal_bringup</name>
   <version>1.0.0</version>
-  <description>libseek_termal wrapper for ros2</description>
+  <description>Bringup package for Seek Thermal camera.</description>
+  <author email="alexander@minor.pw">Alexander Minor</author>
   <maintainer email="alexander@minor.pw">Alexander Minor</maintainer>
-    <license>MIT License</license>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>rclcpp</depend>
-  <depend>sensor_msgs</depend>
-  <depend>cv_bridge</depend>
+  <exec_depend>seek_thermal_driver</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
